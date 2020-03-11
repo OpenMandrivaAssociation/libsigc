@@ -10,7 +10,7 @@
 Name:		%{pkgname}
 Summary:	The Typesafe Signal Framework for C++
 Version:	3.0.2
-Release:	%mkrel 2
+Release:	1
 License:	LGPLv3+
 Group:		System/Libraries
 URL:		http://libsigc.sourceforge.net/
@@ -81,9 +81,6 @@ This package provides API documentation of %{pkgname} library.
 %build
 %configure --disable-static
 %make_build
-
-%check
-make check
 
 %install
 %make_install
