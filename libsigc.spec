@@ -9,7 +9,7 @@
 
 Name:		%{pkgname}
 Summary:	The Typesafe Signal Framework for C++
-Version:	3.0.2
+Version:	3.0.3
 Release:	1
 License:	LGPLv3+
 Group:		System/Libraries
