@@ -9,12 +9,15 @@
 
 Name:		%{pkgname}
 Summary:	The Typesafe Signal Framework for C++
-Version:	3.0.3
+Version:	3.0.4
 Release:	1
 License:	LGPLv3+
 Group:		System/Libraries
 URL:		http://libsigc.sourceforge.net/
 Source0:	https://download.gnome.org/sources/%{pkgname}/%{url_ver}/%{pkgname}-%{version}.tar.xz
+
+BuildRequires: meson
+BuildRequires: mm-common
 
 %description
 Callback system for use in widget libraries, abstract interfaces, and
@@ -79,11 +82,11 @@ This package provides API documentation of %{pkgname} library.
 %setup -q -n %{pkgname}-%{version}
 
 %build
-%configure --disable-static
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 find %buildroot -name '*.la' -delete
 
