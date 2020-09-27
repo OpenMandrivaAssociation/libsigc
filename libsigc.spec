@@ -70,14 +70,6 @@ This package contains the headers and static libraries of %{pkgname},
 which are needed when developing or compiling applications which use
 %{pkgname}.
 
-%package doc
-Summary:	Documentation for %{pkgname} library
-Group:		Documentation
-BuildArch:	noarch
-
-%description doc
-This package provides API documentation of %{pkgname} library.
-
 %prep
 %setup -q -n %{pkgname}-%{version}
 
@@ -100,7 +92,3 @@ find %buildroot -name '*.la' -delete
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*
 %{_libdir}/sigc++-%{api_version}
-
-%files doc
-%doc %{_docdir}/libsigc++-%{api_version}
-%_datadir/devhelp/books/libsigc++-%{api_version}
