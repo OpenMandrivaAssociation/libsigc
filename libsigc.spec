@@ -87,7 +87,7 @@ find %buildroot -name '*.la' -delete
 %{_libdir}/libsigc-%{api_version}.so.%{major}{,.*}
 
 %files -n %{libnamedev}
-%doc AUTHORS ChangeLog
+%doc ChangeLog
 %{_includedir}/*
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*
