@@ -9,8 +9,8 @@
 
 Name:		%{pkgname}
 Summary:	The Typesafe Signal Framework for C++
-Version:	3.4.0
-Release:	3
+Version:	3.6.0
+Release:	1
 License:	LGPLv3+
 Group:		System/Libraries
 URL:		https://libsigc.sourceforge.net/
@@ -87,7 +87,7 @@ find %buildroot -name '*.la' -delete
 %{_libdir}/libsigc-%{api_version}.so.%{major}{,.*}
 
 %files -n %{libnamedev}
-%doc AUTHORS ChangeLog
+%doc ChangeLog
 %{_includedir}/*
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*
